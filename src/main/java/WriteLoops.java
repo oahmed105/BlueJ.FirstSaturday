@@ -38,62 +38,70 @@ public class WriteLoops {
 
     public int startAtTwentyOne() {
         int w = 0;
-        for (w = 21; w)
-        // Write a FOR loop that makes 10 iterations, start at 21.
-        // calling
-        w = w + 1;
-        // each time through the loop
-        
+        for (w = 21; w <= 31; w++) {
+            // Write a FOR loop that makes 10 iterations, start at 21.
+            // calling
+            w = w + 1;
+            // each time through the loop
+        }
         return w;
     }
 
     public int countDown() {
         int w = 0;
-
-        // Write a FOR loop that counts down from 100 to 0.
-        // calling
-        w = w + 1;
-        // each time through the loop
-        
+        for (w =100; w >= 100; w--) {
+            // Write a FOR loop that counts down from 100 to 0.
+            // calling
+            w = w + 1;
+            // each time through the loop
+        }
         return w;
     }
 
     public int byTwoTo32() {
         int w = 0;
-
-        // Write a FOR loop from 0 to 32 by 2s.
-        // calling
-        w = w + 1;
-        // each time through the loop
+        for (w = 0; w <= 32; w = w + 2) {
+            // Write a FOR loop from 0 to 32 by 2s.
+            // calling
+            w = w + 1;
+            // each time through the loop
+        }
         return w;
     }
 
     public int countDownFrom5000() {
         int w = 0;
-
-        // Write a FOR loop from 1 to less than 5001 by 11s.
-        // calling
-        w = w + 1;
-        // each time through the loop
+        for (w = 1; w >= -5001; w = w - 11) {
+            // Write a FOR loop from 1 to less than 5001 by 11s.
+            // calling
+            w = w + 1;
+            // each time through the loop
+        }
         
         return w;
     }
 
     public int nestedFors() {
         int w = 0;
-
-        // Write a nested FOR loop(s), where one counts from
-        // 0 to less than 20 and the inner one counts from 0 to 4
-                // calling
-                w = w + 1;
-                // each time through the inner loop
-
+        for (w = 0; w < 20; w++ ) {
+            for (w = 0; w <= 4; w++) {
+            }
+            // Write a nested FOR loop(s), where one counts from
+            // 0 to less than 20 and the inner one counts from 0 to 4
+            // calling
+            w = w + 1;
+            // each time through the inner loop
+        }
         return w;
     }
 
     public int helloZipCode() {
         int w = 0;
-
+        for (w = 5; w <= 105; w++) {
+            if (w > 51) {
+                System.out.println("Hello Zipcode");
+            }
+        }
         // Write a FOR loop that counts from 5 to 105. Put an IF
         // statement inside the loop that checks the
         // loop index counter and if it’s greater than 51,
@@ -122,6 +130,7 @@ public class WriteLoops {
             i = i - 1;
         } while (i > 0);
         // what's the primary difference between them?!?
+        // one is in ascending order and the other is in descending order
     }
 
     // Write a WHILE loop that checks “gpsCurrentLocation()”
@@ -129,6 +138,10 @@ public class WriteLoops {
     // After the loop is done, print “Honey, I’m Home!”
     public int driveHome() {
         int w = 0;
+        while (gpsCurrentLocation().equals("Home")) {
+            driveSomeMore();
+        }
+        System.out.println("Honey, I'm Home!");
 
         // you need to use a .equals for two Strings.
 
